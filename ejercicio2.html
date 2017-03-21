@@ -12,28 +12,26 @@
 	<p id="parrafo">Culpa placeat cum enim inventore asperiores unde sit fugiat ea aliquam modi esse nostrum magni, eum, repellendus sint at aperiam hic dolorum!</p>
 	<span class="mensaje"></span>
 	<img src="http://lorempixel.com/output/city-q-c-301-301-9.jpg" alt="" class="mensaje">
-	<p id= "elementos"> </p>
+	<p id= "elementos">hola </p>
 
 	<script>
 		var mensaje = document.getElementsByClassName('mensaje');
-		document.getElementById("elementos").innerHTML = mensaje.length;
+		var clases = mensaje.length;
 
-		function Mostrar() {
-			if (mensaje == 1) {
-				document.getElementById('elementos').innerHTML = "Es muy poco";
-
-
-			}else if (mensaje < 4) {
-				document.write("No está mal");
+		function mostrar() {
+			if (clases == 1) {
+				document.getElementById("elementos").innerHTML = "Es muy poco";
 
 
-			}else if (mensaje >= 4) {
+			}else if (clases >= 2 && clases < 4) {
+				document.getElementById("elementos").innerHTML = "No esta mal";
 
+			}else if (clases <= 4) {
+				document.getElementById("elementos").innerHTML = "Son muchos!";
 			}
 
 			}
-
-		}
+			mostrar();
 
 	</script>
 </body>
